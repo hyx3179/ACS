@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.3
       - name: run
-        with:
+        env:
           github_token: ${{ secrets.TOKEN }}
           repository: ${{ secrets.REPOSITORY }}
           email: ${{ secrets.EMAIL }}
