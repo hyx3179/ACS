@@ -17,4 +17,5 @@ jobs:
           REPOSITORY: ${{ secrets.REPOSITORY }}
           EMAIL: ${{ secrets.EMAIL }}
           NAME: ${{ secrets.NAME }}
+          URL: ${{ secrets.URL }}
         run: bash ./ACS.sh
