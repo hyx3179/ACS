@@ -4,7 +4,7 @@
 PA=linux64
 wget https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_${PA}.tar.gz
 tar zxf subconverter_${PA}.tar.gz
-sed -i "8c${URL}" ./subconverter/profiles/example_profile.ini
+sed -i "8curl=${URL}" ./subconverter/profiles/example_profile.ini
 ./subconverter/subconverter -g
 git clone https://gist.github.com/${GITHUB_ACTOR}/${REPOSITORY}.git
 cat ./subconverter/output.yml > ./${REPOSITORY}/clash
