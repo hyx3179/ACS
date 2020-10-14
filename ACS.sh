@@ -4,8 +4,9 @@
 PA=linux64
 wget https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_${PA}.tar.gz
 tar zxf subconverter_${PA}.tar.gz
+cp ./mylist.ini ./subconverter/config/
 sed -i "8curl=${URL}" ./subconverter/profiles/example_profile.ini
-sed -i '9cconfig=../mylist.ini' ./subconverter/profiles/example_profile.ini
+sed -i '9cconfig=config/mylist.ini' ./subconverter/profiles/example_profile.ini
 ./subconverter/subconverter -g
 git clone https://gist.github.com/${GITHUB_ACTOR}/${REPOSITORY}.git
 cat ./subconverter/output.yml > ./${REPOSITORY}/clash
