@@ -2,7 +2,7 @@
 #sudo apt-get install wget git
 #PA=`dpkg --print-architecture`
 PA=linux64
-wget https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_${PA}.tar.gz
+wget -q https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_${PA}.tar.gz
 tar zxf subconverter_${PA}.tar.gz
 cp ./mylist.ini ./subconverter/config/
 sed -i "8curl=${URL}" ./subconverter/profiles/example_profile.ini
