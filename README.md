@@ -8,3 +8,5 @@ NAME
 REPOSITORY  
 TOKEN  
 URL  
+
+# 60天激活
